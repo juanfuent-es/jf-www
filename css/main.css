@@ -102,12 +102,13 @@ article {
 }
 
 p {
+    line-height: 1.48em;
     max-width: 60ch; /* Ancho máximo basado en el ancho del carácter "0" */
 }
 
 .container {
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 1em;
     width: 100%;
     min-width: 320px;
     max-width: 1200px;
