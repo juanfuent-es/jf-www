@@ -1,6 +1,6 @@
 /* Import font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:wdth,wght@75..125,200..900&family=IBM+Plex+Mono&family=Space+Mono&display=swap');
-
+@import url('scroll.css');
 html {
     /* 
     * box-sizing
