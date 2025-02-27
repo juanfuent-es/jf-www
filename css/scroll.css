@@ -1,3 +1,7 @@
+/* 
+* Custom native scroll-bar styling
+* @author: JuanFuent.es
+*/
 :root {
     --scroll-background: #0000FF;
     --scroll-foreground: #FCFCFC;
@@ -5,7 +9,7 @@
     --scroll-border-radius: 0px;
     --scroll-size: 10px;
 }
-/* Custom scroll-bar ->> */
+
 ::-webkit-scrollbar {
     background-color: var(--scroll-background);
     height: var(--scroll-size);
@@ -25,11 +29,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--scroll-background-over);
 }
-
-/* html {
-    scrollbar-color: var(--scroll-background) var(--scroll-background-over);
-    scrollbar-width: thin;
-} */
 
 @media (prefers-reduced-motion: no-preference) {
     html {
