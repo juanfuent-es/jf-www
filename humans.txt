@@ -1,0 +1,14 @@
+/* Website Developed by */
+
+Web Craft Dev		JuanFuent.es
+Instagram			https://instagram.com/JuanFuent.es
+Codepen             https://codepen.io/JuanFuentes
+Behance             https://behance.net/JuanFuentes
+Linkedin            https://linkedin.com/in/JuanFuent-es
+Github              https://github.com/JuanFuent-es
+
+/* SITE */
+	Last update 27/02/2025
+	Language EN
+	Doctype HTML5
+	IDE Visual Studio Code
