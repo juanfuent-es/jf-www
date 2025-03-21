@@ -1,10 +1,12 @@
 :root {
+    --font-family: 'Space Mono', monospace;
+    --font-title: 'Hubot Sans', sans-serif;
     /* light theme colors */
-    --theme-background-light: #FCFCFC;
+    --theme-background-light: linen;
     --theme-color-light: #0000FF;
     /* dark theme colors */
     --theme-background-dark: #121212;
-    --theme-color-dark: #FCFCFC;
+    --theme-color-dark: linen;
     /* default theme colors { light }  */
     --theme-background: var(--theme-background-light);
     --theme-color: var(--theme-color-light);

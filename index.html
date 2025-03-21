@@ -69,7 +69,7 @@
             <ul>
                 <li>
                     <a href="/" aria-label="Inicio">
-                        <img src="/img/juanfuent.es.c-symbol.svg" alt="JuanFuent.es [Cabrera Symbol]" width="42" height="42">
+                        <img src="/img/juanfuent.es.c-symbol.svg" alt="JuanFuent.es [Cabrera Symbol]" width="42" height="42" id="juanfuent-es-symbol">
                     </a>
                 </li>
                 <!-- <li>
@@ -124,9 +124,9 @@
     <!-- main footer, link to home, license info, related links -->
     <footer>
         <nav class="container">
-            <ul>
+            <ul id="license-info">
                 <li>
-                    <a href="/" aria-label="Home" id="logotype">
+                    <a href="/" aria-label="Home">
                         <img src="/img/juanfuent.es-logo.svg" alt="JuanFuent.es Logotype" height="14" width="108" id="logotype">
                     </a>
                 </li>
@@ -138,10 +138,26 @@
                 </li>
             </ul>
             <ul id="networks-list">
-                <li><a href="https://behance.net/JuanFuentes" target="_blank" title="JuanFuent.es on Behance">BE</a></li>
-                <li><a href="https://instagram.com/JuanFuent.es" target="_blank" title="JuanFuent.es on Instagram">IG</a></li>
-                <li><a href="http://codepen.io/juanFuentes" target="_blank" title="JuanFuent.es on Codepen">CP</a></li>
-                <li><a href="https://github.com/JuanFuent-es" target="_blank" title="JuanFuent.es on Github">GH</a></li>
+                <li>
+                    <a href="http://codepen.io/juanFuentes"      class="network-link" target="_blank" title="JuanFuent.es on Codepen">
+                        <i class="icon codepen"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/JuanFuent-es"    class="network-link" target="_blank" title="JuanFuent.es on Github">
+                        <i class="icon github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/JuanFuent.es" class="network-link" target="_blank" title="JuanFuent.es on Instagram">
+                        <i class="icon instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://behance.net/JuanFuentes"    class="network-link" target="_blank" title="JuanFuent.es on Behance">
+                        <i class="icon behance"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>

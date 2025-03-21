@@ -1,0 +1,75 @@
+section#projects {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Evita que los elementos se envuelvan */
+    overflow-x: auto;
+    /* Scroll horizontal */
+    overflow-y: hidden;
+    /* Oculta el scroll vertical */
+    scroll-snap-type: x mandatory;
+    /* Scroll suave entre elementos */
+    /* Espaciado entre imágenes */
+    gap: 1em;
+    padding: 0;
+    height: auto;
+    /* Ajusta la altura automáticamente */
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#about-container {
+    position: sticky;
+    top: 0;
+}
+section#projects ul {
+    display: flex;
+    flex-direction: row;
+    /* Alinea los elementos en fila */
+    padding: 1em 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    gap: 1em;
+    /* Elimina los estilos de lista */
+    padding-right: 4em;
+}
+
+section#projects ul li {
+    line-height: 0;
+    flex: 0 0 min(65vh, 74vw);
+}
+
+@media screen and (min-width: 420px) {
+    section#projects ul li {
+        flex: 0 0 min(65vh, 60vw);
+    }
+}
+
+section#projects ul li img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 960px) {
+    section#projects {
+        padding: 0;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan */
+        /* Oculta el scroll horizontal */
+        /* Ocupa toda la altura disponible */
+        width: 100%;
+    }
+
+    section#projects ul {
+        flex-direction: column;
+        /* Alinea los elementos en columna */
+    }
+
+    section#projects ul li {
+        flex: auto;
+        /* Cada imagen ocupa el 100% del ancho */
+    }
+
+}
