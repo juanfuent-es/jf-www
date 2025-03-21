@@ -5,9 +5,6 @@ section#projects {
     overflow-x: auto;
     /* Scroll horizontal */
     overflow-y: hidden;
-    /* Oculta el scroll vertical */
-    scroll-snap-type: x mandatory;
-    /* Scroll suave entre elementos */
     /* Espaciado entre imágenes */
     gap: 1em;
     padding: 0;
@@ -27,15 +24,24 @@ section#projects ul {
     display: flex;
     flex-direction: row;
     /* Alinea los elementos en fila */
-    padding: 1em 0;
     margin: 0;
     width: 100%;
     list-style: none;
-    gap: 1em;
+    gap: 5vh;
     /* Elimina los estilos de lista */
-    padding-right: 4em;
+    padding-right: 60px;
 }
 
+@media screen and (min-width: 960px) {
+    section#projects ul {
+        padding-right: 90px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    section#projects ul {
+        padding-right: 90px;
+    }
+}
 section#projects ul li {
     line-height: 0;
     flex: 0 0 min(65vh, 74vw);
@@ -54,7 +60,7 @@ section#projects ul li img {
 
 @media screen and (min-width: 960px) {
     section#projects {
-        padding: 0;
+        padding: 5vh 0;
         flex-wrap: wrap;
         /* Permite que los elementos se envuelvan */
         /* Oculta el scroll horizontal */

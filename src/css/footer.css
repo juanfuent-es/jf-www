@@ -57,15 +57,35 @@ ul#networks-list {
   flex-direction: row;
   justify-content: space-around;
   text-transform: uppercase;
+  gap: 1em;
 }
 
 @media screen and (max-width: 420px) {
+  ul#networks-list {
+    order: 1;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    order: 1
+  }
   ul#license-info {
     order: 2;
   }
+}
+@media screen and (min-width: 960px) {
   ul#networks-list {
-    order: 1; 
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    position: fixed;
+    right: 13px;
+    bottom: 10px;
   }
+}
+
+img#logotype {
+  width: max(12vw, 160px);
+  margin-bottom: .5em;
 }
 
 .network-link {
@@ -74,10 +94,16 @@ ul#networks-list {
   justify-content: center;
   font-size: 1.25em;
   font-variation-settings: "wght" 450, "wdth" 90;
-  background-color: var(--scroll-background);
+  background-color: var(--theme-color);
+  color: var(--theme-background);
   width: 42px;
   height: 42px;
-  margin: 0 5px;
+  transition: 250ms ease-in;
+}
+
+.network-link:hover {
+  transition: 250ms ease-out;
+  filter: invert(1);
 }
 
 /* <-- footer */
@@ -98,7 +124,6 @@ a#logotype img {
 @media screen and (min-width: 540px) {
   a#license {
     gap: .5em;
-    padding: 0 0.5em;
   }
 
   a#logotype img {
