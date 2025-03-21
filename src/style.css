@@ -1,17 +1,17 @@
 /* Import font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:wdth,wght@75..125,200..900&family=IBM+Plex+Mono&family=Space+Mono&display=swap');
+@import url('css/theme.css');
 @import url('css/scroll.css');
 @import url('css/icons.css');
 
-
+/* 
+* box-sizing
+* default: 'box-sizing: content-box'
+* @see: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
+*/
 html {
-    /* 
-    * box-sizing
-    * default: 'box-sizing: content-box'
-    * @see: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
-    */
-    box-sizing: border-box;
-    height: 100%;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -28,8 +28,8 @@ body {
     justify-content: space-between;
     font-size: 14px;
     line-height: 1.4em;
-    background-color: #0000FF;
-    color: #FCFCFC;
+    background-color: var(--theme-background);
+    color: var(--theme-color);
     overflow: hidden;
 }
 
@@ -47,8 +47,7 @@ h1 {
 }
 
 h1 span {
-    color: #0000FF;
-    display: block;
+  display: block;
 }
 
 /* <-- title ends */
@@ -82,7 +81,7 @@ nav ul li {
 
 a {
     font-family: "Hubot Sans", sans-serif;
-    color: #FFF;
+    color: var(--theme-color);
     min-width: 42px;
     font-variation-settings: "wght" 350, "wdth" 76;
 }
@@ -170,8 +169,8 @@ footer ul {
 [data-title] {
     position: relative;
     z-index: 0;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFF;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--theme-color);
 }
 
 [data-title]::before {
@@ -180,7 +179,7 @@ footer ul {
     left: 0;
     top: 0;
     z-index: 9;
-    color: #0000FF;
+    color: var(--theme-background);
     width: 100%;
     -webkit-text-stroke-width: 0;
 }
@@ -350,14 +349,4 @@ a#logotype img {
 a {
     position: relative;
     display: inline-block;
-}
-
-span.absolute {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    right: 0;
-    background-color: #FFF;
-    width: 100px;
-    color: red;
 }

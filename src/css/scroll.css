@@ -2,9 +2,10 @@
 * Custom native scroll-bar styling
 * @author: JuanFuent.es
 */
+
 :root {
-    --scroll-background: #0000FF;
-    --scroll-foreground: #FCFCFC;
+    --scroll-background: var(--theme-background);
+    --scroll-foreground: var(--theme-color);
     --scroll-background-over: #00FFFF;
     --scroll-border-radius: 0px;
     --scroll-size: 10px;
@@ -35,5 +36,3 @@
         scroll-behavior: smooth;
     }
 }
-
-/* <<-- Custom scroll-bar */

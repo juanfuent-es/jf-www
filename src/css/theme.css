@@ -1,0 +1,18 @@
+:root {
+    /* light theme colors */
+    --theme-background-light: #FCFCFC;
+    --theme-color-light: #0000FF;
+    /* dark theme colors */
+    --theme-background-dark: #121212;
+    --theme-color-dark: #FCFCFC;
+    /* default theme colors { light }  */
+    --theme-background: var(--theme-background-light);
+    --theme-color: var(--theme-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-background: var(--theme-background-dark);
+        --theme-color: var(--theme-color-dark);
+    }
+}
