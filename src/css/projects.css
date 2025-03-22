@@ -37,6 +37,7 @@ section#projects ul {
 @media screen and (min-width: 960px) {
     section#projects ul {
         padding-right: 90px;
+        padding-bottom: 0;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -80,4 +81,18 @@ section#projects ul li img {
         /* Cada imagen ocupa el 100% del ancho */
     }
 
+}
+
+.project-link {
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.project-link img {
+    transition: transform 120ms ease-out;
+}
+.project-link:hover img {
+    transition: transform 180ms ease-in;
+    transform: scale(.95);
 }
