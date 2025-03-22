@@ -7,6 +7,7 @@
 @import url('css/header.css');
 @import url('css/projects.css');
 @import url('css/footer.css');
+@import url('css/reversed-rights.css');
 
 /* 
 * box-sizing
@@ -56,8 +57,7 @@ h1 {
   font-family: var(--font-title);
   font-size: 3em;
   line-height: 1em;
-  margin-top: 0;
-  margin-bottom: 0.125em;
+  margin: 0;
   display: inline-block;
   text-transform: uppercase;
   font-variation-settings: "wght" 900, "wdth" 125;
@@ -164,6 +164,7 @@ article {
 p {
   line-height: 1.48em;
   max-width: 60ch;
+  margin-bottom: 0;
   /* Ancho máximo basado en el ancho del carácter "0" */
 }
 
@@ -202,7 +203,11 @@ p {
   align-content: center;
   width: 100%;
 }
-
+@media screen and (min-width: 420px) {
+  .container {
+    padding: 0 4em;
+  }
+}
 @media screen and (min-width: 960px) {
   .container {
     padding: 0 60px;
@@ -212,12 +217,6 @@ p {
     width: 50%;
   }
 
-}
-
-.reversed {
-  font-style: normal;
-  transform: scale(-1, 1);
-  display: inline-block;
 }
 
 .sr-only {

@@ -94,18 +94,6 @@
                 <h2 class="sr-only">Projects</h2>
                 <ul>
                     <li>
-                        <a href="https://bienaldeilustracion.com" target="_blank" title="Reuniendo lo mejor de la Ilustración en México y LATAM">
-                            <img 
-                                alt="bienaldeilustracion.com" 
-                                srcset="
-                                https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_540,w_960/bienaldeilustracion 960w,
-                                https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_720,w_1280/bienaldeilustracion 1280w"
-                                sizes="(max-width: 959px) 960px, 1280px"
-                                src="https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_540,w_960/bienaldeilustracion"
-                            >
-                        </a>
-                    </li>
-                    <li>
                         <a href="https://pictoline.com" target="_blank" title="Information Visually Epic">
                             <img 
                                 alt="pictoline.com" 
@@ -114,6 +102,18 @@
                                 https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_720,w_1280/pictoline 1280w"
                                 sizes="(max-width: 959px) 960px, 1280px"
                                 src="https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_540,w_960/pictoline"
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bienaldeilustracion.com" target="_blank" title="Reuniendo lo mejor de la Ilustración en México y LATAM">
+                            <img 
+                                alt="bienaldeilustracion.com" 
+                                srcset="
+                                https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_540,w_960/bienaldeilustracion 960w,
+                                https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_720,w_1280/bienaldeilustracion 1280w"
+                                sizes="(max-width: 959px) 960px, 1280px"
+                                src="https://res.cloudinary.com/dsvsyrtoz/image/upload/c_scale,h_540,w_960/bienaldeilustracion"
                             >
                         </a>
                     </li>
@@ -158,7 +158,7 @@
     </main>
     <!-- main footer, link to home, license info, related links -->
     <footer>
-        <nav class="container">
+        <div class="container">
             <ul id="license-info">
                 <li>
                     <a href="/" aria-label="Home">
@@ -167,34 +167,31 @@
                 </li>
                 <li>
                     <a href="./LICENSE" aria-label="See LICENSE Details" id="license" target="_blank">
-                        <span><i class="reversed" >©</i> Copyleft 2025</span>
-                        <span>All Rights <i class="reversed">R</i>eversed</span>
+                        <!-- <span><i class="reversed" >©</i> Copyleft 2025</span>
+                        <span>All Rights <i class="reversed">R</i>eversed</span> -->
+                        <i class="reversed" id="copyleft-symbol">©</i> 
+                        <div id="reversed-info">
+                            <span id="copyleft-txt">Copyleft 2025</span>
+                            <span id="all-rights-reversed">All Rights <i class="reversed">R</i>eversed</span>
+                        </div>
                     </a>
                 </li>
             </ul>
-            <ul id="networks-list">
-                <li>
-                    <a href="http://codepen.io/juanFuentes"      class="network-link" target="_blank" title="JuanFuent.es on Codepen">
-                        <i class="icon codepen"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/JuanFuent-es"    class="network-link" target="_blank" title="JuanFuent.es on Github">
-                        <i class="icon github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/JuanFuent.es" class="network-link" target="_blank" title="JuanFuent.es on Instagram">
-                        <i class="icon instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://behance.net/JuanFuentes"    class="network-link" target="_blank" title="JuanFuent.es on Behance">
-                        <i class="icon behance"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav id="networks-container">
+                <a class="network-link" target="_blank" title="JuanFuent.es on Codepen" href="http://codepen.io/juanFuentes">
+                    <i class="icon codepen"></i>
+                </a>
+                <a class="network-link" target="_blank" title="JuanFuent.es on Github" href="https://github.com/JuanFuent-es">
+                    <i class="icon github"></i>
+                </a>
+                <a class="network-link" target="_blank" title="JuanFuent.es on Instagram" href="https://instagram.com/JuanFuent.es">
+                    <i class="icon instagram"></i>
+                </a>
+                <a class="network-link" target="_blank" title="JuanFuent.es on Behance" href="https://behance.net/JuanFuentes">
+                    <i class="icon behance"></i>
+                </a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

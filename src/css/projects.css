@@ -6,7 +6,7 @@ section#projects {
     /* Scroll horizontal */
     overflow-y: hidden;
     /* Espaciado entre imágenes */
-    gap: 1em;
+    gap: .5em;
     padding: 0;
     height: auto;
     /* Ajusta la altura automáticamente */
@@ -28,8 +28,10 @@ section#projects ul {
     width: 100%;
     list-style: none;
     gap: 5vh;
+    padding: 0;
     /* Elimina los estilos de lista */
     padding-right: 60px;
+    padding-bottom: 1em;
 }
 
 @media screen and (min-width: 960px) {
@@ -60,7 +62,7 @@ section#projects ul li img {
 
 @media screen and (min-width: 960px) {
     section#projects {
-        padding: 5vh 0;
+        padding: 2em 0;
         flex-wrap: wrap;
         /* Permite que los elementos se envuelvan */
         /* Oculta el scroll horizontal */
