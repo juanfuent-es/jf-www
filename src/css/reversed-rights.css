@@ -38,6 +38,7 @@
     align-items: flex-start;
     line-height: 0.9;
 }
+
 a#license {
     display: flex;
     flex-direction: row;
@@ -49,6 +50,12 @@ a#license {
     text-decoration: none;
     width: auto;
     text-decoration: none;
+    transition: color 75ms ease-in;
+}
+
+a#license:hover {
+    transition: color 75ms ease-out;
+    color: var(--theme-accent);
 }
 
 @media screen and (min-width: 420px) {

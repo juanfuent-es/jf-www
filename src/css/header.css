@@ -1,3 +1,29 @@
+header {
+    padding-top: .5em;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (min-width: 666px) {
+    header {
+        top: 1em;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header {
+        padding-top: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
+        padding-top: 2em;
+    }
+}
+
 #juanfuent-es-symbol {
     width: min(10vw, 48px);
     height: auto;

@@ -3,6 +3,7 @@
 @import url('css/icons.css');
 @import url('css/theme.css');
 @import url('css/scroll.css');
+@import url('css/text.css');
 
 @import url('css/header.css');
 @import url('css/projects.css');
@@ -63,9 +64,9 @@ h1 {
   font-variation-settings: "wght" 900, "wdth" 125;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 960px) {
   h1 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 }
 
@@ -78,26 +79,6 @@ h1 span {
 }
 
 /* <-- title ends */
-
-header {
-  padding-top: .5em;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-}
-
-@media screen and (min-width: 960px) {
-  header {
-    padding-top: 1.5em;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  header {
-    padding-top: 2em;
-  }
-}
 
 nav ul {
   display: flex;

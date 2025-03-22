@@ -2,6 +2,7 @@
     --font-family: 'Space Mono', monospace;
     --font-title: 'Hubot Sans', sans-serif;
     /* light theme colors */
+    --theme-accent: #121212;
     --theme-background-light: linen;
     --theme-color-light: #0000FF;
     /* dark theme colors */
@@ -14,6 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --theme-accent: #FFFF00;
         --theme-background: var(--theme-background-dark);
         --theme-color: var(--theme-color-dark);
     }
